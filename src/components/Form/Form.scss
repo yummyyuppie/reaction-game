@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:600,700&display=swap');
+
+$primary: #4D6FE5;
+
+.account-form{
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.account-form-fields{
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	transition: all .4s cubic-bezier(.785,.135,.15,.86);
+
+	&.sign-in{
+		max-height: 123px;
+	}
+	&.sign-up{
+		max-height: 250px;
+	}
+	> input{
+		border: 0;
+		margin-bottom: 10px;
+		padding: 15px;
+		font-size: 1rem;
+		font-family: 'Nunito', sans-serif;
+		color: #000;
+		border-radius: 5px;
+	
+		&::placeholder{
+			color: #aaa;
+		}	
+		&::-webkit-input-placeholder{
+			color: #aaa;
+		}	
+		&:-ms-input-placeholder{
+			color: #aaa;
+		}
+		&:focus{
+			outline: none;
+		}
+	}
+}
+	
+.btn-submit-form{
+	border: 0;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+	padding: 15px 0;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1rem;
+	font-family: Nunito, sans-serif;
+	background: lighten($primary, 5%);
+	box-shadow: 0px 1px 2px rgba(0,0,0,.13);
+	transition: all .2s ease;
+
+	&:hover {
+		background: darken($primary, 2%);
+	}
+
+	&:active, &:focus {
+		outline: none;
+		background: darken($primary, 7%);
+	}
+}

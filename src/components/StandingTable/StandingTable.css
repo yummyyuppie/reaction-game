@@ -1,0 +1,119 @@
+.standings{
+  width: 30%;
+}
+#standing-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+  }
+  
+  h1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    color: #141a39;
+    text-transform: uppercase;
+    cursor: default;
+  }
+  
+  #leaderboard {
+    width: 100%;
+    position: relative;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    color: #141a39;
+    cursor: default;
+  }
+  
+  tr {
+    transition: all 0.2s ease-in-out;
+    border-radius: 0.2rem;
+  }
+  tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:nth-child(1) {
+    color: #fff;
+  }
+  
+  td {
+    height: 5rem;
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    padding: 8px 4px;
+    position: relative;
+  }
+  
+  .number {
+    width: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .name {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  
+  .points {
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .points:first-child {
+    width: 10rem;
+  }
+  
+  .gold-medal {
+    height: 3rem;
+    margin-left: 1.5rem;
+  }
+  
+  .ribbon {
+    width: 100%;
+    height: 5.5rem;
+    background-color: #4D6FE5;
+    position: absolute;
+  }
+  .refresh_table{
+    padding: 10px;
+    background: #4D6FE5;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .refresh_table:hover{
+    background: #324ba5;
+  }
+  
+  @media (max-width: 740px) {
+      * {
+        font-size: 70%;
+      }
+      .standings{
+        width: 100%;
+      }
+  }
+  
+  @media (max-width: 500px) {
+      * {
+        font-size: 55%;
+      }
+  }
+  
+  @media (max-width: 390px) {
+      * {
+        font-size: 45%;
+      }
+  }
